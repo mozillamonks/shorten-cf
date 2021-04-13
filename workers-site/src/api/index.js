@@ -57,7 +57,7 @@ async function shortenLink(event) {
     const parsedURL = new URL(url);
 
     // No recursive business.
-    if (parsedURL.hostname.endsWith('kes.im')) {
+    if (parsedURL.hostname.endsWith('xn--e77hd3ch.ml')) {
       return respond(event, ErrorCodes.NO_RECURSIVE, 400);
     }
   } catch (e) {

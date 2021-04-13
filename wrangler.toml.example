@@ -1,0 +1,17 @@
+name = "kes_im"
+type = "webpack"
+workers_dev = false
+account_id = "<insert account id>"
+zone_id = "<insert zone>"
+routes = [
+  "xn--e77hd3ch.ml/*",
+  "api.xn--e77hd3ch.ml/*"
+]
+
+[[kv_namespaces]]
+binding = "kesim_data"
+id = "<insert kv id>"
+preview_id=""
+
+[site]
+bucket = "./public"

@@ -43,7 +43,7 @@ async function cut() {
     return showError(slugError);
   }
 
-  const response = await fetch('https://api.kes.im/shorten', {
+  const response = await fetch('https://api.xn--e77hd3ch.mlshorten', {
     method: 'POST',
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
     body: JSON.stringify({url, slug}),
@@ -64,8 +64,8 @@ async function cut() {
 
   resultList.insertAdjacentHTML('afterbegin', `
     <li class="result-item">
-      <a target="_blank" rel="nofollow" href="https://kes.im/${data.shortLink}">
-        https://kes.im/${cutString(data.shortLink, 40)}
+      <a target="_blank" rel="nofollow" href="https://xn--e77hd3ch.ml/${data.shortLink}">
+        https://xn--e77hd3ch.ml/${cutString(data.shortLink, 40)}
       </a>
       <div class="original-url">${cutString(url, 40)}</div>
       <button class="copy-button" onclick="copy(event, '${data.shortLink}')">Copy URL</button>
@@ -101,7 +101,7 @@ function isURLHasError(url) {
     const parsedURL = new URL(url);
 
     // No recursive business.
-    if (parsedURL.hostname.endsWith('kes.im')) {
+    if (parsedURL.hostname.endsWith('xn--e77hd3ch.ml')) {
       return ErrorCodes.NO_RECURSIVE;
     }
   } catch (e) {
@@ -122,7 +122,7 @@ function cutString(string, maxLength) {
 }
 
 function copy(event, shortLink) {
-  navigator.clipboard.writeText(`https://kes.im/${shortLink}`);
+  navigator.clipboard.writeText(`https://xn--e77hd3ch.ml/${shortLink}`);
 
   document.querySelectorAll('.copy-button').forEach(button => {
     button.classList.remove('copied');

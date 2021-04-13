@@ -2,7 +2,7 @@ const CORS_DEFAULT_METHODS = 'GET, HEAD, POST, OPTIONS';
 const CORS_DEFAULT_HEADERS = 'Content-Type';
 
 const allowedOrigins = [
-  'https://kes.im',
+  'https://xn--e77hd3ch.ml',
 ];
 
 export function getCORSHeaders(event) {

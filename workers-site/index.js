@@ -6,7 +6,7 @@ import redirect from './src/redirect';
 addEventListener('fetch', event => {
   const url = new URL(event.request.url);
 
-  if (url.hostname === 'api.kes.im') {
+  if (url.hostname === 'api.xn--e77hd3ch.ml') {
     return serveAPI(event);
   }
 
