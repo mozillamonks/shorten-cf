@@ -65,7 +65,7 @@ async function cut() {
   resultList.insertAdjacentHTML('afterbegin', `
     <li class="result-item">
       <a target="_blank" rel="nofollow" href="https://xn--e77hd3ch.ml/${data.shortLink}">
-        https://xn--e77hd3ch.ml/${cutString(data.shortLink, 40)}
+        https://🇨🇦🇺🇸.ml/${cutString(data.shortLink, 40)}
       </a>
       <div class="original-url">${cutString(url, 40)}</div>
       <button class="copy-button" onclick="copy(event, '${data.shortLink}')">Copy URL</button>
@@ -122,7 +122,7 @@ function cutString(string, maxLength) {
 }
 
 function copy(event, shortLink) {
-  navigator.clipboard.writeText(`https://xn--e77hd3ch.ml/${shortLink}`);
+  navigator.clipboard.writeText(`https://🇨🇦🇺🇸.ml/${shortLink}`);
 
   document.querySelectorAll('.copy-button').forEach(button => {
     button.classList.remove('copied');
