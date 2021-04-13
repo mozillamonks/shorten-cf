@@ -43,7 +43,7 @@ async function cut() {
     return showError(slugError);
   }
 
-  const response = await fetch('https://api.xn--e77hd3ch.mlshorten', {
+  const response = await fetch('https://api.xn--e77hd3ch.ml/shorten', {
     method: 'POST',
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
     body: JSON.stringify({url, slug}),
